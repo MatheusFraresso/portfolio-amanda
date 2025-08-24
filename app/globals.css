@@ -6,6 +6,7 @@
   --tertiary-main: #95261b;
   --text: #191003;
   --background: #e9e4dc;
+  --background-light: #e9e4dc;
 }
 
 @theme inline {
@@ -14,7 +15,7 @@
   --color-tertiary-main: #95261b;
   --color-text: #191003;
   --color-background: #e9e4dc;
-  --color-background-05: #e9e4dc;
+  --color-background-light: #fbf6fe;
   --font-inria: "Inria Serif";
 }
 

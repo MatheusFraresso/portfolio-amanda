@@ -41,12 +41,11 @@ export default function Dropdown({
         </div>
       )}
       <div
-        className={`transition-all duration-200 absolute top-[100%] space-y-4 p-2 border border-text rounded-sm w-fit  ${
-          show ? "hidden" : "flex flex-col"
-        } ${menuOrientation ? menuOrientationStrategy[menuOrientation] : " "}`}
+        className={`transition-all ease-in-out duration-500 absolute top-[100%]  space-y-4 overflow-hidden ${show ? "h-20" : "h-0"
+          } ${menuOrientation ? menuOrientationStrategy[menuOrientation] : " "}`}
       >
         <div
-          className={`flex flex-col space-y-4 line-clamp-1 ${show}`}
+          className={`flex flex-col space-y-4 line-clamp-1 shadow-lg  rounded-sm w-fit p-2 bg-background-light `}
           onClick={() => setShow(!show)}
         >
           {children}
