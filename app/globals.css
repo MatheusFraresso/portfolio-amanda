@@ -1,35 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --verde: #246b5d;
-  --branco-1: #e2e4d1;
-  --vermelho: #ff4000;
-  --preto: #272426;
-  --branco-2: #fff9f9;
+  --primary-main: #224167;
+  --secondary-main: #475d4f;
+  --tertiary-main: #95261b;
+  --text: #191003;
+  --background: #e9e4dc;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --verde: var(--verde);
-  --branco-1: var(--branco-1);
-  --vermelho: var(--vermelho);
-  --preto: var(--vepretorde);
-  --branco-2: var(--branco-2);
+  --color-primary-main: #224167;
+  --color-secondary-main: #475d4f;
+  --color-tertiary-main: #95261b;
+  --color-text: #191003;
+  --color-background: #e9e4dc;
+  --color-background-05: #e9e4dc;
+  --font-inria: "Inria Serif";
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background: var(--branco-1);
-    --foreground: var(--preto);
+    --background: var(--background);
+    --foreground: var(--text);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Inria Serif", "Inter", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
